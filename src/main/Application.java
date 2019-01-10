@@ -10,7 +10,6 @@ public class Application {
     private Object port;
 
     public void  executeMethod() {
-        System.out.println("--- executeMethod");
 
         try {
             Method method = port.getClass().getDeclaredMethod("execute", BigInteger.class, BigInteger.class);
