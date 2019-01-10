@@ -5,10 +5,10 @@ public enum Configuration {
     public String userDirectory = System.getProperty("user.dir");
 
     public String nameOfSubFolder = "component" + fileSeparator + "jar";
-    public String nameOfJavaArchive = "EvilNumber.jar";
+    public String nameOfJavaArchive = "FactorialPrime.jar";
     public String subFolderPathOfJavaArchive = nameOfSubFolder + fileSeparator + nameOfJavaArchive;
     public String fullPathToJavaArchive = userDirectory + subFolderPathOfJavaArchive;
-    public String nameOfClass = "EvilNumber";
+    public String nameOfClass = "FactorialPrime";
 
     public void print() {
         System.out.println("--- Configuration");

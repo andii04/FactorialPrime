@@ -62,7 +62,7 @@ public class FactorialPrime {
         @Override
         public ArrayList<BigInteger> execute(BigInteger rangeFrom, BigInteger rangeTo) {
 
-            ArrayList<BigInteger> EvilNumber = new ArrayList<>();
+            ArrayList<BigInteger> FactorialPrime = new ArrayList<>();
             //System.out.println("execute methode");
             return calculateFactorialPrime(rangeFrom, rangeTo);
         }
