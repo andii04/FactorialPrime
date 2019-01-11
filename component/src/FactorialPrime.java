@@ -30,12 +30,14 @@ public class FactorialPrime {
             for (BigInteger i = new BigInteger("2"); i.compareTo(rangeFrom)<=0 ; i = i.add(BigInteger.ONE)) {
                 temp = temp.multiply(i);
             }
-            if (checkPrime(temp.add(BigInteger.ONE))&& !factorialNumbers.contains(temp))
+            temp = temp.subtract(BigInteger.ONE);
+            if (checkPrime(temp) && !factorialNumbers.contains(temp))
             {
                 System.out.println(temp);
                 factorialNumbers.add(temp);
             }
-            if(checkPrime(temp.subtract(BigInteger.ONE)) && !factorialNumbers.contains(temp)) {
+            temp = temp.add(BigInteger.TWO);
+            if(checkPrime(temp) && !factorialNumbers.contains(temp)) {
                 System.out.println(temp);
                 factorialNumbers.add(temp);
             }
