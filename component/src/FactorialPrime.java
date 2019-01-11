@@ -44,7 +44,7 @@ public class FactorialPrime {
 
         }
 
-
+        System.out.println("End");
         return factorialNumbers;
     }
 
