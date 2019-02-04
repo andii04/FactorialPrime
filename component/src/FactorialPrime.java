@@ -33,18 +33,14 @@ public class FactorialPrime {
             temp = temp.subtract(BigInteger.ONE);
             if (checkPrime(temp) && !factorialNumbers.contains(temp))
             {
-                System.out.println(temp);
                 factorialNumbers.add(temp);
             }
             temp = temp.add(BigInteger.TWO);
             if(checkPrime(temp) && !factorialNumbers.contains(temp)) {
-                System.out.println(temp);
                 factorialNumbers.add(temp);
             }
 
         }
-
-        System.out.println("End");
         return factorialNumbers;
     }
 
